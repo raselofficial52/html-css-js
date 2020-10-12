@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: sans-serif;
+}
+body{
+    background:#000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+h1{
+  
+    font-size:150px;
+    text-transform: uppercase;
+
+    background:url("1.jpg");
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:transparent;
+    background-position:center;
+    animation:text 5s infinite linear;
+}
+.second{
+    background:url('2.jpg');
+   -webkit-background-clip: text;
+    background-clip: text;
+}
+.third {
+    background: url('3.jpeg');
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.fourth {
+    background: url('4.jpeg');
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes text{
+    0%{
+        background-position:right top;
+    }
+    50%{
+        background-position:left;
+    }
+    80%{
+        background-position:left bottom;
+    }
+    100%{
+        background-position:right top;
+    }
+}
