@@ -1,0 +1,360 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0
+}
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:13px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#E01705,yellow);
+    border-radius:20px;
+}
+
+
+/* Scrollbar */
+
+html{
+   font-size:62.5%;
+
+}
+:root {
+    --font: 'Poppins', sans-serif
+}
+
+:root {
+    --top_heder_bg: #0A1F44;
+    --primary: #E01705;
+    --title: #0A1F44;
+    --block_text_color: #0a1f44;
+    --white: #fff;
+    --active: #0062CC;
+    --active_border: #005cbf;
+    --best_featurs_bg: #F8F8F8;
+}
+
+/* === RESET TITLE CODE START == */
+
+.min_title,
+.main_title,
+.discription {
+    text-align: center;
+}
+.discription p{
+    font-size:1.8rem;
+    line-height: 2.6rem;
+    color: var(--block_text_color);
+}
+
+.min_title h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: var(--primary);
+}
+
+.main_title h2 {
+    font-size: 4rem;
+    line-height: 5.6rem;
+    font-weight: 700;
+    color: var(--title);
+    margin: 1rem 0rem 3rem 0rem;
+}
+
+.main_title span {
+    color: var(--primary);
+}
+
+/* === RESET TITLE CODE END == */
+body {
+    font-family: var(--font);
+ 
+}
+
+img {
+    width: 100%;
+}
+
+
+.container {
+    width: 1120px;
+    margin: 0 auto
+}
+.clearFix{
+    clear:both;
+}
+
+
+// header
+.to_header {
+    background: var(--top_heder_bg);
+    max-height: 53px;
+    padding: 1rem 0;
+    position:sticky;
+    top:0;
+}
+
+.to_header p,
+button {
+    color: var(--white)
+}
+
+.to_header p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+}
+
+.to_header button {
+    background: var(--primary);
+    border: none;
+    padding: .9rem 1.1rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-radius: .5rem;
+    margin-left: 1rem;
+}
+
+.top_header_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Navigation Bar 
+.menu {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    position:sticky;
+    top:100px;
+}
+
+.menu .logo {
+    width: 35px;
+    height: 35px;
+}
+
+.menu .main_menu {
+    width: 1104px;
+}
+
+.menu .main_menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    float: right
+}
+
+.menu .main_menu ul li a {
+    text-decoration: none;
+    color: var(--block_text_color);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    text-transform: capitalize;
+    margin: 0 3.5rem;
+}
+
+.menu .main_menu ul li a.menu_mr {
+    margin-right: 0
+}
+
+.menu .main_menu ul li a:last-child {
+    margin-left: 0
+}
+
+.menu .main_menu ul li a:hover {
+    color: var(--primary)
+}
+
+//  HERO SECTION
+
+.hero_section {
+    margin-top: 7rem;
+    overflow: hidden;
+    padding-bottom:8.5rem;
+}
+
+.hero_section .hero_content {
+    width: 500px;
+    float: left;
+    margin-right: 11.2rem;
+}
+
+.hero_section .hero_content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 6.6rem;
+    word-spacing: .6rem;
+    margin-top: 4.5rem;
+    color: var(--title)
+}
+
+.hero_section .hero_content p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+    color: var(--block_text_color);
+    margin-top: 2rem;
+    margin-bottom: 7.5rem;
+}
+
+.hero_section .hero_content .hero_btn {
+    min-height: 64px
+}
+
+.hero_section .hero_content a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+    padding: 1rem 3.5rem;
+    color: var(--white);
+    border-radius: 3rem;
+    transition: all .3s cubic-bezier(0, 0, 1, 4.7);
+    display: inline-block
+}
+
+.hero_section .hero_content a.get_app {
+    background: var(--primary);
+    border: .4rem solid transparent
+}
+
+.hero_section .hero_content a.get_pre {
+    background: var(--title);
+    margin-left: 1rem;
+    border: .4rem solid transparent
+}
+
+.hero_section .hero_content a:hover {
+    transform: scale(1.05)
+}
+
+.hero_section .hero_content a.get_app:active {
+    background: var(--active);
+    border: .4rem solid #8fb3f4
+}
+
+.hero_section .hero_content a.get_pre:active {
+    background: #545b62;
+    border: .4rem solid #767a7d
+}
+
+.hero_section .hero_image {
+    width: 500px;
+    float: left;
+    width: 432px;
+    height: 470px
+}
+
+
+/* Best Features Section */
+.bestFeatures {
+    background:var(--best_featurs_bg);
+    border-top:.1rem solid #DEE2E6;
+    padding:8rem 0rem;
+    
+}
+
+
+.Product_details{
+    margin-top:8.5rem;
+    .products{
+        width:366.66px;
+        float:left;
+        margin-right:1rem;
+     
+        .features_box{
+            display: flex;
+            margin-bottom:3rem;
+            .fetures_text{
+                h3{
+                    font-size:2.1rem;
+                    line-height: 3rem;
+                    font-weight: 600;
+                    color:var(--title);
+                    margin-bottom:1rem;
+                }
+                p{
+                    font-size:1.4rem;
+                    line-height:2.4rem;
+                    font-weight:400;
+                    color:var(--block_text_color);
+                }
+            }
+            .fetures_image{
+                i{
+                    color:var(--primary);
+                    width:60px;
+                    height:60px;
+                    border:.1rem solid var(--primary);
+                    border-radius:50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding:1.5rem;
+                    font-size:2.4rem;
+                    line-height:2.4rem;
+                    font-weight: 600;
+                    margin-left: .1rem;
+                    margin-top: .5rem;
+                    
+                }
+            }
+        }
+        .product_image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .product_image img{
+            width:258.48px;
+            height:296.27px;
+            margin-top:2rem;
+        }
+    }
+}
+
+// Technical Specs
+
+section.technical_specs{
+
+    margin-top:8.5rem;
+    .technical_details{
+        width: 500px;
+        float:left;
+        .technical_image{
+            img{
+                width:35.5rem;
+            }
+        }
+    }
+    .icon_box_wrapper{
+        width:500px;
+        float: left;
+        .icon_box{
+            text-align:center;
+            width:255px;
+            min-height:31.7rem;
+            border:.1rem solid #E5E5E5;
+            i{
+                color:var(--primary);
+                width: 80px;
+                height:80px;
+                font-size:2.4rem;
+                line-height:2.4rem;
+               
+            }
+        }
+    }
+}
