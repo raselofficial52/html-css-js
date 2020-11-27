@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration:none;
+}
+body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background:#ECF0F3;
+}
+.login_form{
+    width:350px;
+    height:600px;
+    background:#ECF0F3;
+    box-shadow: 10px 10px 15px#CED4D9,
+                -10px -10px 15px #fff;
+    border-radius: 20px;
+    padding:50px 35px 35px 35px;
+}
+.logo{
+    background:url('youtube.png');
+    width:100px;
+    height:100px;
+    background-size:80px 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 50%;
+    margin:auto;
+    box-shadow: 0px 0px 3px #CED4D9,
+                10px 10px 15px #CED4D9,
+                -10px -10px 15px white;
+}
+h3{
+    font-size:20px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color:#7A7A7A;
+    text-align: center;
+    margin:15px 0px;
+}
+h4{
+    font-size:20px;
+    font-family: sans-serif;
+    color:#A2A3A3;
+    text-align: center;
+}
+form{
+    margin-top:50px;
+}
+input{
+    border:none;
+    width:100%;
+    height:100%;
+    padding:10px 15px;
+    background:transparent;
+}
+input::placeholder{
+    font-size:15px;
+    color:#A2A3A3;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.username,
+.password {
+    width:100%;
+    height:50px;
+    margin:15px 0px;
+    box-shadow:inset 6px 6px 10px #CED4D9,
+               inset -6px -6px 10px #fff;
+                ;
+
+    border-radius: 20px;
+    padding:5px 0px 5px 15px;
+    display:flex;
+}
+form svg{
+    width:30px;
+    height:30px;
+    margin-top:1px;
+    
+}
+button{
+    width:100%;
+    border:0px;
+    height:50px;
+    box-shadow: 0px 0px 3px #CED4D9,
+                6px 6px 10px #CED4D9,
+                -6px -6px 10px white;
+
+    border-radius: 20px;
+    margin-top:10px;
+    
+}
+button:hover{
+    box-shadow: 0px 0px 3px #CED4D9,
+                -6px -6px 10px #CED4D9,
+                6px 6px 10px white;
+    cursor: pointer;
+}

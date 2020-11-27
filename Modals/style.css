@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    font-family: sans-serif;
+}
+button{
+    background:blue;
+    color:#fff;
+    width:200px;
+    padding:5px;
+    height:50px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal_content{
+    width:50%;
+    background:rgb(212, 211, 211);
+    text-align: center;
+    padding:15px;
+    margin: auto;
+    margin-top:300px;
+}
+.close_btn{
+    float:right;
+    font-size:40px;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+.modal_wrapper{
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.5);
+    position:fixed;
+    top:0;
+    left:0;
+    display: none;
+}
