@@ -21,6 +21,8 @@ body{
                 -10px -10px 15px #fff;
     border-radius: 20px;
     padding:50px 35px 35px 35px;
+    transform:translateY(-800px);
+    transition:all .5s ease;
 }
 .logo{
     background:url('youtube.png');
@@ -103,3 +105,23 @@ button:hover{
                 6px 6px 10px white;
     cursor: pointer;
 }
+
+.login_btn{
+    background:blue;
+    font-size:32px;
+    font-weight: bold;
+    color:#ffff;
+    padding:10px 30px;
+    border-radius:10px;
+}
+
+
+.close_btn{
+    background:blue;
+    color:#fff;
+}
+
+
+
+
+
